@@ -1,0 +1,23 @@
+<html> 
+  <head>
+    <div style="color:green;font-size:50px;">
+    <script language="JavaScript">
+		var D1_sko=prompt("Dni 1=","");
+		var D2_sko=prompt("Dni 2=","");
+        var G1_sko=prompt("Godzina 1=","");
+		var G2_sko=prompt("Godzina 2=","");
+		                    var suma;
+                            var A=parseFloat(D1_sko)*24*360;
+                            var B=parseFloat(D2_sko)*24*360;
+                            C=parseFloat(G1_sko)*360;
+                            D=parseFloat(G2_sko)*360;
+		  suma=Math.abs(A+B);
+          suma2=Math.abs(C+D);
+		  document.write("Liczba sekund pomiędzy dniami="+A+" + "+B+" = "+suma+"<br>");
+          document.write("Liczba sekund pomiędzy godzinami="+C+" + "+D+" = "+suma2+"<br>");
+    </script>
+    </div>
+</head>
+<body>
+</body> 
+</html>

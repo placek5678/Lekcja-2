@@ -1,19 +1,17 @@
 <html> 
   <head>
+    <div style="color:green;font-size:50px;">
     <script language="JavaScript">
 		var D1_sko=prompt("Dni 1=","");
 		var D2_sko=prompt("Dni 2=","");
-		var suma;
-                             var A=parseFloat(D1_sko);
-                             var B=parseFloat(D2_sko);
-		  suma=D1_sko+D2_sko;
-		  document.write("Liczba sekund pomiędzy dniami="+A+" + "+B+" = "+suma+"<br>");
+		                        var suma;
+                            var A=parseFloat(D1_sko)*24*360;
+                            var B=parseFloat(D2_sko)*24*360;
+		  suma=Math.abs(A+B);
+		  document.write("Liczba sekund pomiędzy dniami="+A+" + "+B+" = "+suma+"");
     </script>
-    
+    </div>
 </head>
 <body>
-    <div style="color:green;font-size:35px;"></div>
-    <input type="button" onclick="show_prompt()" value="Ile sekund" />  
-   </body> 
- </html>   
- 
+</body> 
+</html>
